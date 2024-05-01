@@ -3,7 +3,7 @@ import { signIn } from "../auth"
 export function SignIn() {
   return (
     <form
-      action={async (formData) => {
+      action={async () => {
         "use server";
         await signIn("github");
       }}
